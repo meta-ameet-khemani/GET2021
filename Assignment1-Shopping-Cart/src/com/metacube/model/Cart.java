@@ -2,11 +2,15 @@ package com.metacube.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * 
+ * @author ameet.khemani_metacu
+ * Cart class represents complete cart information
+ */
 public class Cart {
 
-	List<CartItem> cartItems = new ArrayList<>();
-	Double totalPrice = 0d;
+	public List<CartItem> cartItems = new ArrayList<>();
+	public Double totalPrice = 0d;
 	
 	public Double getTotalPrice() {
 		return totalPrice;

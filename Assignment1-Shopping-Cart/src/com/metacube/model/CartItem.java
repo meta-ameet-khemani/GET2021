@@ -1,6 +1,9 @@
 package com.metacube.model;
-
-
+/**
+ * 
+ * @author ameet.khemani_metacu
+ * Cartitem class represent a single item in cart
+ */
 public class CartItem {
 
 	Item item;

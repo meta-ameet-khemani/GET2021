@@ -1,5 +1,10 @@
 package com.metacube.model;
 
+/**
+ * 
+ * @author ameet.khemani_metacu
+ * Item class represents a single item
+ */
 public class Item {
 	
 	int id;
@@ -35,6 +40,11 @@ public class Item {
 
 	public void setCost(double cost) {
 		this.cost = cost;
+	}
+
+	@Override
+	public String toString() {
+		return "Item [id=" + id + ", name=" + name + ", cost=" + cost + "]";
 	}
 	
 }
