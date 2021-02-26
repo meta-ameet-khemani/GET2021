@@ -29,11 +29,18 @@ public class JobScheduler {
 		arrivalAndBurstTiming[5][0] = 5;
 		arrivalAndBurstTiming[5][1] = 2;
 		
+		getCompletionTime();
+		getTurnAroundTime();
+		getWaitingTime();
+		showProcessesInfo();
+		System.out.println("Total waiting time : " + getTotalWaitingTime());
+		System.out.println("Average waiting time : " + getAverageWaitingTime());
+		
 	}
 	
 	/**
 	 * shows completion time of each process
-	 * @return
+	 * @return array of completion time
 	 */
 	public static int[] getCompletionTime() {
 		int previousCompletionTime = 0;
@@ -52,7 +59,7 @@ public class JobScheduler {
 	
 	/**
 	 * shows turn-around time for each process
-	 * @return
+	 * @return array of turn-aroung time
 	 */
 	public static int[] getTurnAroundTime() {
 		
@@ -65,7 +72,7 @@ public class JobScheduler {
 	
 	/**
 	 * shows waiting time of each process
-	 * @return
+	 * @return array of waiting time
 	 */
 	public static int[] getWaitingTime() {
 		
@@ -80,7 +87,7 @@ public class JobScheduler {
 	
 	/**
 	 * gives average waiting time of all processes
-	 * @return
+	 * @return average waiting time
 	 */
 	public static int getAverageWaitingTime() {
 		int totalWaitingTime = 0, maxWaitingTime = 0;
@@ -94,7 +101,7 @@ public class JobScheduler {
 	
 	/**
 	 * gives total waiting time of all processes
-	 * @return
+	 * @return total waiting time
 	 */
 	public static int getTotalWaitingTime() {
 		int totalWaitingTime = 0, maxWaitingTime = 0;
