@@ -90,12 +90,7 @@ public class JobScheduler {
 	 * @return average waiting time
 	 */
 	public static int getAverageWaitingTime() {
-		int totalWaitingTime = 0, maxWaitingTime = 0;
-		for(int singleWaitingTime : waitingTime) {
-			totalWaitingTime += singleWaitingTime;
-			if (maxWaitingTime < singleWaitingTime)
-				maxWaitingTime = singleWaitingTime;
-		}
+		int totalWaitingTime = getTotalWaitingTime();
 		return (totalWaitingTime/TOTAL_PROCESSES);
 	}
 	
