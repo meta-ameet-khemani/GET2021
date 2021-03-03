@@ -1,11 +1,14 @@
 package com.metacube.test;
 
 import static org.junit.Assert.*; 
+
 import java.util.Arrays;
 import java.util.Collection;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
 import com.metacube.operations.CountClump;
 
 @RunWith(Parameterized.class)
@@ -22,25 +25,34 @@ public class CountClumpTest {
 	@Parameterized.Parameters
 	public static Collection<Object[]> testValues() {
 		return Arrays.asList(new Object[][]{
-			{new int[]{1, 2, 2, 3, 4, 4}, 2},
-			{new int[]{1, 1, 2, 1, 1}, 2},
-			{new int[]{1, 1, 1, 1}, 1}
+			{new int[]{1, 2, 2, 3, 4, 4}, 2},		// first test input
+			{new int[]{1, 1, 2, 1, 1}, 2},			// second test input
+			{new int[]{1, 1, 1, 1}, 1}				// third test input
 		});
 	}
 	
+	/**
+	 * Testing with above inputs
+	 */
 	@Test
 	public void multipleParametersTest() {
 		assertEquals(clumpCount, CountClump.countClumps(this.array));
 	}
 
+	/**
+	 * Testing with same elements in array
+	 */
 	@Test
-	public void singleFirstTest() {
+	public void sameElementTest() {
 		assertEquals(1, CountClump.countClumps(new int[]{1, 1, 1, 1, 1, 1, 1, 1}));
 	}
-	
-	@Test
-	public void singleSecondTest() {
-		assertEquals(3, CountClump.countClumps(new int[]{}));
+
+	/**
+	 * Testing with an empty array
+	 */
+	@Test(expected = AssertionError.class)
+	public void testEmptyArray() {
+		CountClump.countClumps(new int[]{});
 	}
 
 }
