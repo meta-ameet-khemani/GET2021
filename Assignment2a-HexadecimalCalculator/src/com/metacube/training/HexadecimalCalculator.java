@@ -11,7 +11,7 @@ public class HexadecimalCalculator {
 		System.out.println(HexadecimalComparisonOperations.firstLessThanSecond("av", "a"));
 		
 		System.out.println(HexadecimalArithmeticOperations.isValidHexadecimalNumber("12"));
-		System.out.println(HexadecimalComparisonOperations.compareHexadecimals("dc", "cd"));
+		System.out.println(HexadecimalComparisonOperations.compareHexadecimals("a", "a"));
 	}
 
 }
