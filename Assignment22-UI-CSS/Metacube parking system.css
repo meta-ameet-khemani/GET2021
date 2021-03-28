@@ -1,0 +1,104 @@
+.navbar {
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    margin-top: -10px;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    margin-top: -5px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.link {
+    color: rgb(243, 241, 237);
+    padding: 20px;
+    font-size: 120%;
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    float: left;
+}
+
+.collapse .collapse-btn {
+    background-color: #b3b3b3;
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 25px;
+    text-align: left;
+    line-height: 50px;
+    letter-spacing: 10px;
+}
+
+#addEmployee {
+    padding: 30px 50px;
+    border: 4px solid maroon;
+    border-radius: 3%;
+    margin: 100px;
+    background: linear-gradient(#f9faf0, #fafaf7);
+}
+
+#addVehicle {
+    padding: 30px 50px;
+    border: 4px solid maroon;
+    border-radius: 3%;
+    margin: 100px;
+    background: linear-gradient(#f9faf0, #fafaf7);
+}
+
+.button-field {
+    border-radius: 2%;
+    background-color: rgb(0, 150, 250);
+    color: rgb(10, 8, 3);
+    height: 40px;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#giveFeedback {
+    padding: 30px 50px;
+    border: 4px solid maroon;
+    margin: 100px;
+    border-radius: 2%;
+    height: 400px;
+    background: linear-gradient(#f9faf0, #fafaf7);
+}
+
+#giveFeedback .feedback {
+    height: 318px;
+    width: 50%;
+    float: right;
+    margin-top: -323px;
+}
+
+.price-container {
+    box-sizing: border-box;
+    border: 2px solid rgb(70, 173, 214);
+    border-radius: 5%;
+    float: left;
+    width: 26%;
+    margin-top: -20px;
+    margin-left: 90px;
+}
+
+.circle-container {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.prices {
+    color: rgb(14, 11, 11);
+}
