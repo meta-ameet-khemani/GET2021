@@ -3,17 +3,32 @@
 		<title>Metacube parking system</title>
 	</head>
 	<body>
-		<div>
-			<div style="float: left"><a href="#addEmployee">Add Employee</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div> 
-			<div style="float: left"><a href="#addVehicle">Add Vehicle</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-			<div style="float: left"><a href="#giveFeedback">Give Feedback</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-			<div style="float: left"><a href="#pricing">Pricing</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-		</div>
-		
+		<table style="width: 40%;">
+			<thead>
+				<tr>
+					<td>
+						<a href="#addEmployee">Add Employee</a>
+					</td>
+
+					<td>
+						<a href="#addVehicle">Add Vehicle</a>
+					</td>
+
+					<td>
+						<a href="#giveFeedback">Give Feedback</a>
+					</td>
+
+					<td>
+						<a href="#pricing">Pricing</a>
+					</td>
+				</tr>
+			</thead>
+		</table>
+
 		<br><br><br>
 		
 		<div align="center">
-			<img src="C:\Users\ameet.khemani_metacu\Documents\Parking System.jpg" width="800px">
+			<img src="Parking System.jpg" width="800px">
 		</div>
 		
 		<br>
@@ -25,43 +40,55 @@
 				<table align="center">
 					<tr>
 						<td>
-							<label>Name</label>&nbsp; &nbsp; &nbsp; &nbsp;
+							<label>Name</label>
+						</td>
+						<td>
 							<input type="text" placeholder="Vijay Chouhan" pattern="[A-Za-z]*" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Gender</label>&nbsp; &nbsp;
-							<input type="radio" value="M" required>&nbsp; &nbsp;Male
-							<input type="radio" value="F">&nbsp; &nbsp;Female
+							<label>Gender</label>
+						</td>
+						<td>
+							<input type="radio" value="M" required>Male
+							<input type="radio" value="F">Female
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Email</label>&nbsp; &nbsp; &nbsp; &nbsp;
+							<label>Email</label>
+						</td>
+						<td>
 							<input type="email" placeholder="abc@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Password</label>&nbsp;
+							<label>Password</label>
+						</td>
+						<td>
 							<input type="password" placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Confirm Password</label>&nbsp;
+							<label>Confirm Password</label>
+						</td>
+						<td>
 							<input type="password" placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Contact Number</label>&nbsp;
+							<label>Contact Number</label>
+						</td>
+						<td>
 							<input type="text" placeholder="1234567890" pattern="([0-9]){10}" required>
 						</td>
 					</tr>
@@ -83,13 +110,17 @@
 					<tr>
 						<td>
 							<label>Name</label>
+						</td>
+						<td>
 							<input type="text" placeholder="Maruti Suzuki Ciaz" pattern="[A-Za-z]*" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Type</label>&nbsp; &nbsp;
+							<label>Type</label>
+						</td>
+						<td>
 							<select>
 								<option selected>Select Type</option>
 								<option selected>Cycle</option>
@@ -101,28 +132,36 @@
 
 					<tr>
 						<td>
-							<label>Vehicle Company</label>&nbsp; &nbsp;
+							<label>Vehicle Company</label>
+						</td>
+						<td>
 							<input type="text" placeholder="Maruti Suzuki" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Vehicle Number</label>&nbsp; &nbsp; &nbsp; &nbsp;
+							<label>Vehicle Number</label>
+						</td>
+						<td>
 							<input type="text" placeholder="RJ 19 AA 1234" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Employee Email</label>&nbsp; &nbsp; &nbsp; &nbsp;
+							<label>Employee Email</label>
+						</td>
+						<td>
 							<input type="email" placeholder="abc@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Vehicle Identification</label>&nbsp;
+							<label>Vehicle Identification</label>
+						</td>
+						<td>
 							<input type="text" placeholder="Dent on right door" required>
 						</td>
 					</tr>
@@ -143,28 +182,36 @@
 				<table align="center">
 					<tr>
 						<td>
-							<label>Join date</label>&nbsp; &nbsp;
+							<label>Join date</label>
+						</td>
+						<td>
 							<input type="date" placeholder="Join date" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Email</label>&nbsp; &nbsp; &nbsp; &nbsp;
+							<label>Email</label>
+						</td>
+						<td>
 							<input type="text" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Subject</label>&nbsp; &nbsp; &nbsp;
+							<label>Subject</label>
+						</td>
+						<td>
 							<input type="text" required>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<label>Message</label>&nbsp; &nbsp;
+							<label>Message</label>
+						</td>
+						<td>
 							<textarea rows="4" cols="50" required></textarea>
 						</td>
 					</tr>
