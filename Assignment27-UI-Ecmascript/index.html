@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Meta Parking</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="./js/application.js"></script>
+    </head>
+    <body>
+        <form id="register" class="employeeDetails">
+
+            <div id="employeeName">
+                <label id="labelforname" class="labelClass">Hello, Please Enter Your Name</label>
+                <input type="input" id="name" class="inputClass" onkeypress="if (event.keyCode==13) registerName();" >
+            </div>
+
+            <div class="showdiv" id="employeeGender">
+               <label id="labelforgender" class="labelClass"></label>
+               <div class="radioClass">
+                    <input type="radio" id="inputgender" value="male" onclick="registerGender(event);">Male
+                    <input type="radio" id="inputgender" value="female" onclick="registerGender(event);">Female
+               </div>
+            </div>
+
+            <div class="showdiv" id="employeeEmail">
+                <label id="labelforemail" class="labelClass">Please Enter Your Email Id</label>
+                <input type="input" id="inputemail" class="inputClass" onkeypress="if (event.keyCode==13) registerEmail();">
+            </div>
+
+            <div class="showdiv" id="employeeID">
+                <label id="labelforemail" class="labelClass">Please Enter Your Employee Id</label>
+                <input type="input" id="inputemployeeid" class="inputClass" onkeypress="if (event.keyCode==13) registerEmployeeId();">
+            </div>
+
+            <div class="showdiv" id="employeePassword">
+                <label id="labelforpassword" class="labelClass">Please Set Your Password</label>
+                <input type="password" id="inputpassword" class="inputClass" onkeypress="registerPassword(event);">
+            </div>
+            
+            <div class="showdiv" id="employeeConfirmPassword">
+                <label id="labelforconfirmpassword" class="labelClass">Please Confirm Your Password</label>
+                <input type="password" id="inputconfirmpassword" class="inputClass" onkeypress="registerConfirmPassword(event);">
+            </div>
+            
+            <div class="showdiv" id="employeeContact">
+                <label class="labelClass">Please Enter Your Contact No</label>
+                <input type="input" id="inputcontact" class="inputClass" onkeypress="registercontact(event);">
+            </div>
+            
+            <div id="errormessage" class="errormessage"></div>
+        </form>
+
+        <form id="vehicle" class="vehicleForm vehicle">
+
+            <div id="vehicleModel">
+                <label id="labelformodel" class="labelClass">Enter Your Vehicle Model</label>
+                <input type="input" id="inputVehicleModel" class="inputClass" onkeypress="if (event.keyCode==13) registerVehicleModel();" >
+            </div>
+            
+            <div class="showdiv" id="vehicleNumber">
+                <label id="labelfornumber" class="labelClass">Enter Your Vehicle Registration Number</label>
+                <input type="input" id="inputVehicleNumber" class="inputClass" onkeypress="if (event.keyCode==13) registerVehicleNumber();" >
+            </div>
+            
+            <div class="showdiv" id="vehicleType">
+               <label id="labelfortype" class="labelClass">Please Select Your Vehicle Type</label>
+               <div class="radioClass">
+                    <input type="radio" id="inputtype" value="byCycle" onclick="registertype('byCycle');">Bycycle
+                    <input type="radio" id="inputtype" value="motorCycle" onclick="registertype('motorCycle');">Motor Cycle
+                    <input type="radio" id="inputtype" value="fourWheeler" onclick="registertype('fourWheeler');">Four Wheeler
+               </div>
+            </div>
+            
+            <div class="showdiv" id="selectPlan">
+                <label for="inputplan" id="labelforplan" class="labelClass"></label>
+                <div class="radioClass" id="radioforplan"></div>
+            </div>
+            
+            <div class="showdiv success" id="sucessregister"></div>
+        </form>
+    </body>
+</html>
