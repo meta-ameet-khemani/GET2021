@@ -1,0 +1,286 @@
+<html>
+	<head>
+		<title>Metacube parking system</title>
+	</head>
+	<body>
+		<table style="width: 40%;">
+			<thead>
+				<tr>
+					<td>
+						<a href="#addEmployee">Add Employee</a>
+					</td>
+
+					<td>
+						<a href="#addVehicle">Add Vehicle</a>
+					</td>
+
+					<td>
+						<a href="#giveFeedback">Give Feedback</a>
+					</td>
+
+					<td>
+						<a href="#pricing">Pricing</a>
+					</td>
+				</tr>
+			</thead>
+		</table>
+
+		<br><br><br>
+		
+		<div align="center">
+			<img src="Parking System.jpg" width="800px">
+		</div>
+		
+		<br>
+		
+		<div id="addEmployee">
+			<h3>Add Employee</h3>
+			
+			<form>
+				<table align="center">
+					<tr>
+						<td>
+							<label>Name</label>
+						</td>
+						<td>
+							<input type="text" placeholder="Vijay Chouhan" pattern="[A-Za-z]*" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Gender</label>
+						</td>
+						<td>
+							<input type="radio" value="M" required>Male
+							<input type="radio" value="F">Female
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Email</label>
+						</td>
+						<td>
+							<input type="email" placeholder="abc@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Password</label>
+						</td>
+						<td>
+							<input type="password" placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Confirm Password</label>
+						</td>
+						<td>
+							<input type="password" placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Contact Number</label>
+						</td>
+						<td>
+							<input type="text" placeholder="1234567890" pattern="([0-9]){10}" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="submit" value="Save">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<div id="addVehicle">
+			<h3>Add Vehicle</h3>
+			
+			<form>
+				<table align="center">
+					<tr>
+						<td>
+							<label>Name</label>
+						</td>
+						<td>
+							<input type="text" placeholder="Maruti Suzuki Ciaz" pattern="[A-Za-z]*" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Type</label>
+						</td>
+						<td>
+							<select>
+								<option selected>Select Type</option>
+								<option selected>Cycle</option>
+								<option selected>Motorcycle</option>
+								<option selected>Four Wheeler</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Vehicle Company</label>
+						</td>
+						<td>
+							<input type="text" placeholder="Maruti Suzuki" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Vehicle Number</label>
+						</td>
+						<td>
+							<input type="text" placeholder="RJ 19 AA 1234" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Employee Email</label>
+						</td>
+						<td>
+							<input type="email" placeholder="abc@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Vehicle Identification</label>
+						</td>
+						<td>
+							<input type="text" placeholder="Dent on right door" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="submit" value="Save">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<div id="giveFeedback">
+			<h3>Get in touch</h3>
+			
+			<form>
+				<table align="center">
+					<tr>
+						<td>
+							<label>Join date</label>
+						</td>
+						<td>
+							<input type="date" placeholder="Join date" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Email</label>
+						</td>
+						<td>
+							<input type="text" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Subject</label>
+						</td>
+						<td>
+							<input type="text" required>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Message</label>
+						</td>
+						<td>
+							<textarea rows="4" cols="50" required></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="submit" value="Send Email">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<div id="pricing">
+			<h3>Pricing</h3>
+			<div align="center">
+			
+				<div>
+					<h3>Cycle</h3>
+					<div>
+						<b>$100</b>
+						<label>/Month</label>
+					</div>
+					<br>
+					<label>$5 Daily</label>
+					<br>
+					<label>$100 Monthly</label>
+					<br>
+					<label>$500 Yearly</label>
+					<br>
+					<input type="button" value="Purchase">
+				</div>
+
+				<br>
+
+				<div>
+					<h3>Motorcycle</h3>
+					<div>
+						<b>$200</b>
+						<label>/Month</label>
+					</div>
+					<br>
+					<label>$10 Daily</label>
+					<br>
+					<label>$200 Monthly</label>
+					<br>
+					<label>$1000 Yearly</label>
+					<br>
+					<input type="button" value="Purchase">
+				</div>
+
+				<br>
+
+				<div>
+					<h3>Four Wheeler</h3>
+					<div>
+						<b>$500</b>
+						<label>/Month</label>
+					</div>
+					<br>
+					<label>$20 Daily</label>
+					<br>
+					<label>$500 Monthly</label>
+					<br>
+					<label>$3500 Yearly</label>
+					<br>
+					<input type="button" value="Purchase">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
