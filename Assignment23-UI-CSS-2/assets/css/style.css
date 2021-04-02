@@ -185,27 +185,32 @@ align-items: center;
     -moz-box-shadow:2px 2px 19px 10px #ccc;
     -webkit-box-shadow:2px 2px 19px 10px #ccc;
     -khtml-box-shadow:2px 2px 19px 10px#ccc;
-    height: 500px;
+    height: 510px;
+    z-index: 2;
 }
 
 .carousel-item.left{
-    transform:translateX(90px);
-    z-index: -1;
-    transform: rotate3d(0,1,0,30deg);
+    z-index: 2;
+    transform: skewY(10deg);
 }
 
 .carousel-item.left-last{
-    height: 500px;
+    margin-right: -40px;
+    z-index: 1;
+    transform: skewY(10deg);
+    height: 450px;
 }
 
 .carousel-item.right{
-    transform: rotateY(60);
+    transform: skewY(-10deg);
     z-index: -1;
+    height: 494px;
 }
 
 .carousel-item.right.last{
-    height: 500px;
+    height: 450px;
     z-index: -2;
+    margin-left: -35px;
 }
 
 .screenshots .screen{
@@ -261,6 +266,7 @@ align-items: center;
     font-size: 90px;
     color: rgb(58, 104, 255);
     height: 10px;
+    padding-left: 88%;
 }
 .reviews .review-container .review{
     font-weight:600;
