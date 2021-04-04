@@ -1,0 +1,40 @@
+.employeeDetails, .vehicle{
+    margin: 20%;
+    width: 50%;
+}
+
+.labelClass {
+    font-size: 2rem;
+}
+
+.inputClass {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000000;
+    font-size: 1.5rem;
+}
+
+.showdiv {
+    display: none;
+}
+
+.radioClass {
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.vehicleForm {
+    display: none;
+}
+
+.errormessage {
+    font-size: 1.5rem;
+    color: #ff6600;
+    margin: auto;
+}
+
+.success {
+    color: #33cc33;
+    margin: auto;
+    font-size: 2rem;
+}
