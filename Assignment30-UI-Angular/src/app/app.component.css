@@ -1,0 +1,15 @@
+.field_width {
+    width: 14%;
+}
+
+.new_task {
+    background-color: #0384fc;
+}
+
+.inprogress_task {
+    background-color: #fc03f0;
+}
+
+.completed_task {
+    background-color: #03f4fc;
+}
