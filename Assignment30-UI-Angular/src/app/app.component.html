@@ -1,0 +1,95 @@
+<button type="button" class="btn btn-primary" (click)="addTaskForm()">Add Task</button>
+
+<table class="table">
+  <thead>
+    <title>Tasks Management</title>
+
+    <tr>
+      <td>#</td>
+
+      <td>Title</td>
+
+      <td>Description</td>
+
+      <td>Status</td>
+
+      <td>Creation Date</td>
+
+      <td>Completion Date</td>
+
+      <td>Priority</td>
+
+      <td></td>
+
+      <td></td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let task of tasks; let i = index" [ngClass]="{'new_task': task.status === 0, 'inprogress_task' : task.status === 1, 'completed_task' : task.status === 2 }">
+
+      <td>{{i + 1}}</td>
+
+      <td>{{task.title}}</td>
+
+      <td>{{task.description}}</td>
+
+      <td>{{getStatus(task.status)}}</td>
+
+      <td>{{task.creationDate | date : 'dd/MM/yyyy'}}</td>
+
+      <td>{{task.completionDate | date : 'dd/MM/yyyy'}}</td>
+
+      <td>{{getPriority(task.priority)}}</td>
+
+      <td><span><i class='fas fa-edit' (click)='edit(task.id)'></i></span></td>
+
+      <td><span><i class='fas fa-trash-alt' (click)='delete(task.id)'></i></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="addTaskDiv == true">
+
+  <form (ngSubmit)="addTask(task)">
+    
+    <div class="mb-3">
+      <label for="titleInput" class="form-label">Task Title</label>
+      <input type="text" name="title" class="field_width form-control" id="titleInput" aria-describedby="titleHelp" [(ngModel)]="task.title">
+    </div>
+
+    <div class="mb-3">
+      <label for="descriptionInput" class="form-label">Task Description</label>
+      <input type="text" name="description" class="field_width form-control" id="descriptionInput" aria-describedby="descriptionHelp" [(ngModel)]="task.description">
+    </div>
+
+    <div class="mb-3" *ngIf="task.id">
+      <label for="statusTask" class="form-label">Task Status</label>
+      <select id="statusTask" name="status" class="field_width form-select" aria-label="Default select example" [(ngModel)]="task.status">
+        <option value="0">New</option>
+        <option value="1">Inprogress</option>
+        <option value="2">Completed</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="complettionDateInput" class="form-label">Completion Date</label>
+      <input type="date" name="completionDate" class="field_width form-control" id="complettionDateInput" aria-describedby="completionDateHelp" [(ngModel)]="task.completionDate">
+    </div>
+
+    <div class="mb-3">
+      <label for="priorityTask" class="form-label">Task Priority</label>
+      <select id="priorityTask" name="priority" class="field_width form-select" aria-label="Default select example" [(ngModel)]="task.priority">
+        <option value="0">High</option>
+        <option value="1">Medium</option>
+        <option value="2">Low</option>
+      </select>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="button" (click)="addTaskForm (false)" style="margin-left: 16px;" class="btn btn-danger">Cancel</button>
+  
+  </form>
+
+</div>
